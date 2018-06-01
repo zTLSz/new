@@ -1,0 +1,7 @@
+$(function() {
+
+	// banner main
+
+
+
+});
