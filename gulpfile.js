@@ -41,6 +41,8 @@ gulp.task('js', function() {
 		'app/libs/slick/slick.min.js',
 		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		// 'app/libs/masonry/masonry.pkgd.min.js',
+		'app/libs/mdl/material.min.js',
+		'app/libs/bootstrap/bootstrap.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

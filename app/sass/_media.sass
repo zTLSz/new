@@ -3,339 +3,120 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+
 +media-breakpoint-down(lg)
-	.main-menu
-		display: none
-	.image-block
-		margin-top: 20px
-	.image-block__slider-wrap
-		max-width: 640px
-		margin-right: 20px
-	.image-block__slider
-		width: 640px
-	.image-block__banner
-		width: auto
-	.greetings__line-v
-		display: none
-	.footer__mail
-		display: block
-	.footer__mail-new
-		margin-bottom: 10px
-	.header
-		min-height: 80px
-		padding-top: 25px
-	.breadcrumbs
-		margin-top: 25px
-	.catalog__page-list-item .catalog-item__button
-		justify-content: start
-	.catalog__page-list-header-wrap
-		display: flex
-	.catalog__page-list-header
-		flex: 1
-	.catalog__page-menu-mob.active
-		display: block !important
-	.catalog__page-menu-mob.active .catalog__page-menu
-		position: absolute;
-		z-index: 10;
-		top: 5px;
-		width: 40%;
-		box-shadow: 0px 3px 21px 5px rgba(213,215,215,0.6)
-	.catalog__page-menu-mclose
-		display: flex
-	.catalog__page-blocks
-		justify-content: space-between
-	.detail__tags
-		padding-left: 0
-		display: flex
-		flex-flow: row wrap
-	.detail__tags-item
-		margin-right: 10px
-	input[type='submit'].button-buy
-		width: auto
-	.header__mobile-basket
-		position: relative
-		.header__basket-amount
-			left: 15px
-			bottom: 10px
-	.text-page__about-img img
-		max-width: 33%
-
-
-
-// ≥992px
-+media-breakpoint-down(md)
-	.image-block__banner
-		display: none
-	.image-block__slider-wrap
-		display: block
-		max-width: none
-		width: 100%
-		margin-right: 0
-	.image-block__slider
-		width: 100%
-		margin-right: 0
-	h3
-		line-height: 1.3em
-	.greetings__text p
-		text-align: justify
-	.button-buy
-		width: 50px
-		padding-top: 6px
-		padding-bottom: 6px
-	.button-buy__text
-		display: none
-	.button-buy__icon
-		display: flex
-		width: 100%
-		height: 25px
-		background: url(../img/icons/cart.png) no-repeat center
-	.catalog-item__button
-		display: flex
-		justify-content: flex-end
-	.footer__contacts
-		text-align: center
-	.footer__adr a.footer__adr-main
-		display: inline-block
-		text-align: left
-		position: relative
-		margin-left: 77px
-		&:before
-			left: -25px
-	.footer__adr
-		padding-left: 0
-	.up-btn
-		bottom: 210px
-	.catalog__page-blocks .catalog-item
-		width: 215px
-	.button-buy__in-cart
-		min-height: 39px
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		justify-content: center
-		align-items: center
-	.catalog__page-blocks .catalog-item__button-noamount
-		justify-content: flex-start
-	.detail__info-text
-		padding-left: 0
-	.detail__tabs-menu ul>li
-		line-height: 2em
-	.catalog-item__button-specify
-		justify-content: flex-start
-	.text-page__img-relative
+	.menu__lg-visible
+		display: none;
+	.header__menu-item
+		margin-right: 20px;
+	.header__menu ul
+		justify-content: flex-start;
+	.menu__lg-hidden
+		display: block;
+	.header__menu
+		padding-right: 0;
+	.header__btn
+		margin-left: 0;
+	.header__tel a
+		font-size: 16px;
+	.header__tel a:before
 		bottom: 0
-		left: 0
-	.text-page__about-img img
-		max-width: 49%
+		left: -25px
+	.header__tel
+		margin-right: 10px;
+	.footer__social-icons .social-icon:last-child
+		margin-right: 0;
+	.slider__big
+		min-height: auto
 
-// ≥768px
+
+
+
++media-breakpoint-down(md)
+	.header__contacts
+		display: block;
+	.header__tel
+		margin-bottom: 5px;
+		text-align: right;
+	.header__btn
+		text-align: right;
+		margin-left: 0;
+	.slider__big-item-h1
+		padding-left: 0;
+	.slider__big-item-date
+		padding-left: 0;
+	.project__item
+		min-height: 430px
+	.project__item-text
+		padding: 15px
+		padding-top: 30px;
+	.news__item-text
+		padding: 15px
+	.news__item
+		min-height: 430px;
+	.social-icon
+		margin-right: 15px;
+	.news__footer
+		min-height: auto;
+		display: block;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+	.footer__copyright
+		text-align: center;
+	.footer__social
+		text-align: center;
+	.footer__social-icons
+		margin-bottom: 15px;
+		
+
 +media-breakpoint-down(sm)
-	.mfp-content .hidden_pp
-		position: relative
-	.up-btn
-		right: calc(50vw - 60px);
-	.popup-menu__container
-		position: relative
-		width: calc(100% + 21px)
-		margin-left: -15px;
-		margin-right: -15px;
-		top: 0
-	.popup-menu .mfp-close
-		left: auto
-		right: -5px
-		top: 0
-		z-index: 1000
-	.catalog__page-list-item-price
-		min-width: 120px
-	.catalog__page-adv-list
-		height: auto
-	.catalog__page-list-item
-		height: auto
-	.catalog__page-list-item-img
-		width: 150px
-		img
-			height: auto
-	.catalog__page-sort-view
-		display: none
-	.catalog__page-sort
-		line-height: 25px
-	.catalog__page-menu-mob.active .catalog__page-menu
-		width: 70%
-	.catalog__page-blocks .catalog-item
-		width: 100%
-	.detail__info-small-slider
-		margin-bottom: 30px
-	.popup__reg-wrap
-		width: 100%
-	.popup__reg-social
-		flex-flow: row wrap
-	.text-page__1
-		padding-top: 25px
-		padding-bottom: 25px
-	.text-page__about-img
-		display: none
-	.text-page__float-img-wrap
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		flex-flow: row wrap
-	.text-page__float-img
-		width: 100%
-		order: 2
-		margin-right: 0
-		text-align: center
-	.text-page__2
-		width: 100%
-		order: 1
-	.lk__state-item .catalog__page-list-item
-		flex-flow: row wrap
-	.lk__state-item .catalog__page-list-item-info
-		width: 50%
-		flex: auto
-	.lk__state-item .catalog__page-list-lk-amount,
-	.lk__state-item .catalog__page-list-lk-weight
-		width: 50%
-		flex: auto
-		margin-top: 10px
-		margin-bottom: 10px
-	.lk__state-item .catalog__page-list-item-info
-		padding-left: 0
-		padding-right: 0
-		padding-bottom: 0
-	.lk__state-item .catalog__page-list-item-price
-		padding-left: 0
-		padding-right: 0
-	.recipe__item
-		width: 100%
-		margin-right: 0
-		margin-left: 0
-	.recipe__item-img
-		text-align: center
-	.recipe__detail-ing>ul>li
-		width: 100%
-	.recipe__detail-step
-		display: block
-	.recipe__detail-step-img
-		margin-bottom: 10px
+	.btn-red-cb
+		font-size: 14px;
+		width: 100%;
+		padding-left: 14px;
+		padding-right: 14px;
+	.project__item
+		margin-bottom: 20px;
+	.news__item
+		margin-bottom: 20px;
+	h1
+		font-size: 24px;
+	.slider__big-item-date h2
+		font-size: 14px;
+	.slider__big-item-line
+		bottom: 8px
+	.news
+		padding-top: 50px;
 
-// ≥576px
+
 +media-breakpoint-down(xs)
-	.image-block__slider-wrap
-		width: calc(100% + 30px)
-		margin-right: -15px
-		margin-left: -15px
-	.popup-menu__container
-		padding-left: 15px
-		padding-right: 15px
-		position: relative
-		top: 0
-	.popup-menu__catalog
-		padding-right: 50px
-	.catalog__page-list-item
-		display: block
-		height: auto
-		padding-bottom: 20px
-	.catalog__page-list-item-img
-		width: 100%
-		text-align: center
-		margin-bottom: 10px
-	.catalog__page-list-item-img img
-		width: 100%
-	.catalog__page-sort-view
-		display: none
-	.catalog__page-sort
-		line-height: 30px
-	.catalog__page-list-item-info,
-	.catalog__page-list-item-price
-		padding-left: 20px
-		padding-right: 20px
-	.catalog__page-list-item-info
-		padding-bottom: 10px
-	.catalog__page-list-item .catalog-item__price span.price-red, 
-	.catalog__page-list-item .catalog-item__price span.price-sale
-		display: inline
-	.catalog-item__price
-		margin-bottom: 0
-	.catalog__page-list-item-price
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
-		display: flex
-		justify-content: space-between
-		align-items: center
-		flex-flow: row wrap
-	.catalog__page-list-item .catalog-item__button
-		justify-content: flex-end
-	.catalog__page-adv-list
-		display: none
-	.catalog__page-list-item .catalog-item__no-amount
-		order: 3
-		width: 100%
-		margin-top: 5px
-	.catalog__page-list-header-wrap
-		flex-flow: row wrap
-	.catalog__page-mobile-btn-wrap
-		width: 100%
-		margin-bottom: 20px
-	.catalog__page-menu-mob.active .catalog__page-menu
-		width: 90%
-	.detail__wrap
-		padding-left: 10px
-		padding-right: 10px
-	.detail__tabs-menu ul>li a.d-item-comment:after,
-	.detail__tabs-menu ul>li a.d-item-support:after,
-	.detail__tabs-menu ul>li a.d-item-support span,
-	.detail__tabs-menu ul>li a.d-item-comment span
-		display: none
-	.detail__tabs-menu ul>li a.d-item-support i
-		display: inline-block
-		width: 50px
-		height: 47px
-		background: url(../img/icons/support_mobile.png) no-repeat center
-	.detail__tabs-menu ul>li a.d-item-comment i
-		display: inline-block
-		width: 50px
-		height: 47px
-		background: url(../img/icons/comm_mobile.png) no-repeat center	
-	.detail__tabs-menu ul
-		display: flex
-		align-items: center
-	.detail__tabs-menu ul>li
-		margin-right: 15px
-	.detail__comment-item-text
-		padding-left: 10px
-	.detail__tabs-wrap
-		margin-top: 25px
-	.detail__tabs-menu
-		margin-bottom: 25px
-	.text-page__wrap
-		padding-left: 15px
-		padding-right: 15px
-	.lk__main
-		padding-left: 10px
-		padding-right: 10px
-	.lk__state-item .catalog__page-list-item-info
-		width: 100%
-	.lk__state-item-content-info
-		width: 100%
-	.search__options-item
-		margin-bottom: 10px
-	.search__form form input[type=text]
-		width: 100%
-		margin-bottom: 10px
-	.search__form-res
-		padding-left: 0
-	.search__main, .search__res-item
-		padding-left: 10px
-		padding-right: 10px
-	.catalog__page-list-item-start span
-		width: 100%
+	.header__logo-desktop
+		display: none;
+	.header__logo-mobile
+		display: block;
+	.header__tel a
+		font-size: 12px;
+	.btn-red-cb
+		font-size: 12px;
+	.header__tel a:before
+		bottom: -2px
+	.slider__big .slick-dots
+		padding-right: 0;
+		text-align: center;
+	.header__logo img
+		max-height: 80px
+	.slider__big-item-img
+		min-height: 350px
+	.slider__big-item img
+		min-height: 350px
+	.slider__big-arr-left
+		background-position: 50% 80%;
+	.slider__big-arr-right
+		background-position: 50% 20%;
+	.slider__big-item-text
+		bottom: 70px
+	
 
 
 /*==========  Mobile First  ==========*/
