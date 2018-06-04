@@ -493,6 +493,9 @@ button
 	&__item-img
 		img
 			max-width: 100%;
+		a
+			display: block
+			width: 100%;
 	&__item-text
 		padding: 25px
 	&__item-date
@@ -517,6 +520,7 @@ button
 			&:hover,
 			&:active
 				text-decoration: none;
+				color: $red
 		p
 			line-height: 20px;
 	&__footer-wrap
@@ -541,6 +545,10 @@ button
 		display: flex;
 		justify-content: space-between;
 		align-items: center
+	&__page
+		padding-top: 50px;
+		.news__item
+			margin-bottom: 50px;
 
 .social-icon
 	display: inline-block;
@@ -621,18 +629,19 @@ button
 
 .input__wrapper
 	width: 100%;
-	padding: 10px 0
+	padding: 20px 0
+	border-bottom-color: rgba(0,0,0,.26);
 	.mdl-textfield__input
 		font-family: inherit;
-		border: 1px solid $text
+		/* border: 1px solid $text */
 		padding: 5px 10px
 		padding-right: 30px;
 	.mdl-textfield__label:after
 		background-color: $green;
-		bottom: 10px
+		bottom: 20px
 	.mdl-textfield__label
 		width: auto;
-		top: 15px
+		top: 20px
 		span
 			display: inline-block;
 			padding-left: 10px;
@@ -645,6 +654,48 @@ button
 
 .mdl-textfield.is-invalid .mdl-textfield__label:after
 	    background-color: $green
+
+.mdl-textfield--floating-label.is-invalid .mdl-textfield__label
+	color: rgba(0,0,0,.26)
+	font-size: 14px;
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label
+	top: -5px
+	font-size: 12px;
+
+.mdl-textfield--floating-label.is-dirty .mdl-textfield__label
+	top: -5px
+	font-size: 12px;
+	color: $red
+
+label.input-text__error
+	font-size: 12px;
+	position: absolute;
+	color: $red
+
+.breadcrumbs
+	> ul
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 100%;
+		justify-content: flex-end;
+	&__item
+		padding-right: 10px;
+		&:after
+			content: ' >'
+			display: inline-block;
+			position: relative;
+			left: 5px
+	&__item-active
+		&:after
+			display: none;
+	a:hover
+		text-decoration: none;
+		color: $red
+
 
 form.test
 	label
@@ -680,7 +731,7 @@ i.input__icon
 	position: absolute;
 	width: 24px;
 	height: 24px
-	top: 13px
+	top: 17px
 	right: 5px
 
 i.input__icon-user
