@@ -442,6 +442,13 @@ button
 		text-align: center;
 		img
 			max-width: 100%
+	&__item-comm
+		background-color: #fff;
+		.project__item-text h3
+			color: $text
+		a
+			display: block;
+			text-align: center;
 	&__item-text
 		position: relative;
 		padding: 30px
@@ -472,6 +479,16 @@ button
 			z-index: 1;
 			left: 0
 			top: -1px
+		p.project__adr-comm:before
+			content: ''
+			display: inline-block;
+			position: absolute;
+			width: 24px;
+			height: 24px;
+			background: url(../img/icons/info.svg) no-repeat center
+			z-index: 1;
+			left: 0
+			top: -2px		
 	&__item-link a
 		display: block;
 		position: absolute;
@@ -555,6 +572,53 @@ button
 		padding-top: 50px;
 		.news__item
 			margin-bottom: 50px;
+	&__footer-only
+		background: white;
+		padding-top: 0;
+
+.estate
+	&__text p
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #4a4a4a
+	&__switch
+		padding-right: 40px;
+	&__item
+		margin-bottom: 100px;
+	&__switch-wrap
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.mdl-switch.is-checked .mdl-switch__thumb
+			background: $green
+			width: 25px;
+			height: 25px
+			left: 38px
+			box-shadow: none
+		.mdl-switch__thumb
+			width: 25px;
+			height: 25px
+			left: 5px
+			top: 4px
+			background: $green
+			box-shadow: none;
+		.mdl-switch.is-checked .mdl-switch__track
+			background-color: #fff;
+		.mdl-switch__track
+			border: 1px solid grey
+			top: -1px;
+			height: 35px;
+			width: 67px;
+			border-radius: 18px;
+			background-color: #fff;
+
+
 
 .social-icon
 	display: inline-block;
