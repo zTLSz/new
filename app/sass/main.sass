@@ -801,6 +801,54 @@ button
 		p
 			padding-bottom: 5px;
 
+.calc
+	&__results-item
+		margin-bottom: 20px;
+	&__results-item-name
+		display: inline-block;
+		font-size: 18px;
+		width: 50%;
+	&__results-item-res
+		color: $green
+		font-size: 24px;
+
+
+.calc__ranges
+	.mdl-slider__background-flex
+		height: 5px
+	.mdl-slider__background-lower,
+	.mdl-slider__background-upper
+		background: #d3dce6;
+	.mdl-slider.is-upgraded
+		height: 2px
+		border: 0
+		color: black
+	&-item
+		margin-bottom: 20px;
+	&-item-amount
+		text-align: center;
+		background-color: #fff;
+		padding: 3px
+		padding-bottom: 10px;
+		position: relative;
+		top: 8px
+		font-size: 18px;
+
+.payment__block-item
+	font-size: 16px;
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 15px;
+
+.calc__ranges .mdl-slider.is-upgraded::-webkit-slider-thumb
+	background: $red;	
+
+.calc__ranges .mdl-slider.is-upgraded::-moz-slider-thumb
+	background: $red;
+
+.calc__ranges .mdl-slider.is-upgraded::-ms-slider-thumb
+	background: $red;
+
 
 .footer
 	background-color: #2d2d2d

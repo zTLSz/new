@@ -200,6 +200,49 @@
 							<h2>Ипотечный калькулятор</h2>
 						</div>
 					</div>
+					<div class="col-xl-7 col-md-12 col-sm-12 col-12">
+						<div class="calc__ranges">
+							<div class="calc__ranges-item">
+								<div id="calc-procent-val" class="calc__ranges-item-amount"></div>
+								<input class="mdl-slider mdl-js-slider" id="calc-procent" type="range"
+  								min="80" max="120" step="1" value="90" tabindex="0">
+  							</div>
+  							<div class="calc__ranges-item">
+  								<div id="calc-price-val" class="calc__ranges-item-amount"></div>
+  								<input class="mdl-slider mdl-js-slider" id="calc-price" type="range"
+  								min="1000000" max="9999999" step="1000" value="4000000" tabindex="0">
+  							</div>
+  							<div class="calc__ranges-item">
+  								<div id="calc-depo-val" class="calc__ranges-item-amount"></div>
+  								<input class="mdl-slider mdl-js-slider" id="calc-depo" type="range"
+  								min="0" max="8000000" step="1000" value="500000" tabindex="0">
+  							</div>
+  							<div class="calc__ranges-item">
+  								<div id="calc-time-val" class="calc__ranges-item-amount"></div>
+  								<input class="mdl-slider mdl-js-slider" id="calc-time" type="range"
+  								min="1" max="30" step="1" value="5" tabindex="0">
+  							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 offset-xl-1 col-md-12 col-sm-12 col-12">
+						<div class="calc__results">
+							<div class="calc__results-item">
+								<span class="calc__results-item-name">Сумма кредита</span>
+								<span class="calc__results-item-res" id="calc-res-sum"></span>
+							</div>
+							<div class="calc__results-item">
+								<span class="calc__results-item-name">Ежемесячный платеж</span>
+								<span class="calc__results-item-res" id="calc-res-price"></span>
+							</div>
+							<div class="calc__results-item">
+								<span class="calc__results-item-name">Необходимый доход</span>
+								<span class="calc__results-item-res" id="calc-res-salary"></span>
+							</div>
+							<div class="calc__results-item">
+								<a class="btn-red btn-red-cb mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-toggle="modal" data-target="#payModal" href="#">График платежей</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -459,6 +502,28 @@
 					<li><a href="#">Контакты</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>	
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn-red" data-dismiss="modal">Закрыть</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="payModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h2 class="modal-title" id="payModalLabel">График платежей</h2>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body mm__body">
+				<div id="mort-payment" class="payment__block">
+					
+				</div>	
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn-red" data-dismiss="modal">Закрыть</button>
